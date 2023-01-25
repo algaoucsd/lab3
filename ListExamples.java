@@ -25,7 +25,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
     while(index1 < list1.size() && index2 < list2.size()) {
-      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+      if(list1.get(index1).compareTo(list2.get(index2)) < 0) { //expects list1 element to be less than list2 element
         result.add(list1.get(index1));
         index1 += 1;
       }
@@ -40,7 +40,7 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      index1 += 1;
+      index2 += 1;
     }
     return result;
   }
